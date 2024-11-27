@@ -34,13 +34,13 @@ Po włączeniu aplikacji automatycznie otworzy się strona główna (domyślnie:
 
 2. Przeglądanie stron:
 
-W polu na górze ekranu wpisz adres strony internetowej, np. www.google.com, i kliknij przycisk „Połącz”.
+W polu na górze ekranu wpisz adres strony internetowej, np. www.google.com, i kliknij przycisk „Connect”.
 
-Aby wrócić na stronę główną, kliknij „Strona główna”.
+Aby wrócić na stronę główną, kliknij „Home”.
 
-Skorzystaj z przycisku „Odśwież”, aby ponownie załadować aktualną stronę.
+Skorzystaj z przycisku „Reload”, aby ponownie załadować aktualną stronę.
 
-Użyj przycisku „Wstecz”, aby cofnąć się do poprzedniej strony.
+Użyj przycisku „Back”, aby cofnąć się do poprzedniej strony.
 
 
 
