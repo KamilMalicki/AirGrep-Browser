@@ -1,79 +1,65 @@
-# AirGrep-Browser
+# AirGrep Browser
 
-AirGrep to aplikacja mobilna, która pozwala na wygodne przeglądanie stron internetowych oraz pobieranie plików bezpośrednio na Twoje urządzenie z systemem Android.
+AirGrep to minimalistyczna przeglądarka internetowa na Androida, skupiona na szybkości, prywatności i wygodnym pobieraniu plików. Zawiera wbudowany bloker reklam oraz tryb prywatny.
 
-Główne funkcje:
+## Główne funkcje
 
-Przeglądanie stron internetowych
-AirGrep to prosta i szybka przeglądarka, która umożliwia wprowadzanie adresów URL, nawigację między stronami i odświeżanie zawartości.
+### Przeglądanie stron
+- Obsługa JavaScript, DOM storage, HTML5
+- Pasek adresu z automatycznym dodawaniem `https://`
+- Ładowanie stron z historii i ręczne wpisywanie adresów
 
-Szybkie nawigowanie
+### Nawigacja
+- Przycisk Wstecz – cofanie do poprzedniej strony
+- Przycisk Dalej – powrót do kolejnej strony
+- Przycisk Odśwież – przeładowanie bieżącej strony
+- Przycisk Strona domowa – otwiera `https://airgrep.rf.gd`
+- Przycisk Informacje – pokazuje dane o aplikacji
 
-Powrót na stronę główną za pomocą jednego kliknięcia.
+### Tryb prywatny
+- Włączenie: wpisz `airgrep://private-mode`
+- Wyłączenie: wpisz `airgrep://private-mode-off`
+- Nie zapisuje historii, cache, cookies
 
-Przycisk „Wstecz” pozwala cofnąć się do poprzednio odwiedzanej strony.
+### Czyszczenie danych (komendy)
+- `airgrep://clear-cache` – czyści cache
+- `airgrep://clear-history` – czyści historię
+- `airgrep://clear-cookies` – usuwa ciasteczka
+- `airgrep://clear-all` – czyści wszystkie dane
 
-Funkcja odświeżania strony zapewnia aktualną zawartość.
+### Pobieranie plików
+- Automatyczne wykrywanie linków do plików
+- Używa `DownloadManager` z powiadomieniami
+- Długie przytrzymanie przycisku „Connect” pozwala pobierać pliki z GitHub (raw)
 
+### Blokowanie reklam
+- Wbudowany blok reklam popularnych domen
+- Blokowanie na poziomie żądań HTTP
 
-Pobieranie plików
-Klikając w linki do plików na stronach, możesz je pobierać bezpośrednio na swoje urządzenie. Aplikacja automatycznie nadaje plikom właściwe nazwy.
+### Tryb offline
+- Przy braku internetu ładuje lokalną stronę `offline.html`
 
-Tryb pełnoekranowy
-Korzystaj z przeglądarki w trybie pełnoekranowym, co pozwala na wygodniejsze przeglądanie treści.
+## Jak korzystać
 
-Powiadomienia systemowe
-Po zainstalowaniu aplikacji zobaczysz powiadomienie przypominające, kto jest autorem aplikacji.
+1. Uruchom aplikację – ładuje domyślną stronę `https://airgrep.rf.gd`.
+2. Wpisz adres w pasku i kliknij „Connect”.
+3. Nawiguj za pomocą przycisków Back, Forward, Reload i Home.
+4. Kliknij link do pliku, by pobrać.
+5. Wpisz komendy `airgrep://private-mode`, `airgrep://clear-cache` itd. w pasku adresu, by zarządzać trybem prywatnym i danymi.
 
+## Informacje techniczne
 
-Jak korzystać z AirGrep?
+- Minimalne SDK: 31 (Android 12)
+- Uprawnienia:  
+  - `WRITE_EXTERNAL_STORAGE` niepotrzebne przy SDK 31 i scoped storage  
+- Autor: Kamil Malicki
 
-1. Uruchom aplikację.
-Po włączeniu aplikacji automatycznie otworzy się strona główna (domyślnie: http://airgrep.rf.gd).
+## Prywatność
 
+- Brak telemetrii i analityki
+- Tryb prywatny nie zapisuje historii ani plików cookie
+- Dane można ręcznie czyścić z poziomu paska adresu
 
-2. Przeglądanie stron:
+---
 
-W polu na górze ekranu wpisz adres strony internetowej, np. www.google.com, i kliknij przycisk „Connect”.
-
-Aby wrócić na stronę główną, kliknij „Home”.
-
-Skorzystaj z przycisku „Reload”, aby ponownie załadować aktualną stronę.
-
-Użyj przycisku „Back”, aby cofnąć się do poprzedniej strony.
-
-
-
-3. Pobieranie plików:
-Kliknij w link do pliku, który chcesz pobrać. Aplikacja automatycznie zapisze plik w folderze Pobrane na Twoim urządzeniu.
-
-
-4. Tryb pełnoekranowy:
-Aplikacja automatycznie przełącza się w tryb pełnoekranowy dla lepszej wygody użytkownika.
-
-
-5. Powiadomienia:
-Po uruchomieniu aplikacji zobaczysz powiadomienie informujące o autorze aplikacji.
-
-
-
-Czym AirGrep różni się od innych przeglądarek?
-
-Nie przechowuje historii przeglądania ani danych formularzy, co zwiększa Twoją prywatność.
-
-Każdorazowo po zamknięciu aplikacji pamięć cache oraz dane są automatycznie czyszczone.
-
-Minimalistyczny design i intuicyjny interfejs sprawiają, że korzystanie z AirGrep to czysta przyjemność.
-
-
-Informacje o aplikacji
-
-Nazwa aplikacji: AirGrep
-
-Autor: Kamil Malicki
-
-Wymagania systemowe: Android 4.1 lub nowszy
-
-
-Ciesz się szybkim i bezpiecznym przeglądaniem z AirGrep!
-
+Ciesz się szybkim i bezpiecznym przeglądaniem z AirGrep.
